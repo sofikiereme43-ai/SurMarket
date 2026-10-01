@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SurMarket</string>
+    <string name="FRGLogin_Title">Iniciar Sesión\n</string>
+    <string name="FRGLogin_TXVUserName">Nombre de usuario\n</string>
+    <string name="FRGLogin_ETXPassword">Ingresa tu contraseña</string>
+    <string name="FRGLogin_TXVPassword">Contraseña</string>
+    <string name="FRGLogin_ETXUserName">Ingresa tu nombre de Usuario</string>
+    <string name="FRGLogin_TXVRecoverPassword">Recuperar Contraseña</string>
+    <string name="FRGLogin_BTNLogin">Iniciar Sesión</string>
+    <string name="FRGLogin_BTNRegister">Registrate Aquí</string>
+</resources>
