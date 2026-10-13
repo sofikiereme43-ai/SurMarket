@@ -50,7 +50,8 @@ class FragmentLogin : Fragment() {
     private fun SignIn(){
         val user=ETX_FRGLogin_UserName.text.toString().trim()
         val password=ETX_FRGLogin_Password.text.toString().trim()
-        if(!verifyIntegrity(user,password)){
+        if(!verifyIntegrity(user,password))
+        {
             return
         }
         if(verifyCredentials(user,password)){
@@ -60,7 +61,7 @@ class FragmentLogin : Fragment() {
 
         }
         }
-    }
+
 
 
 
@@ -71,10 +72,18 @@ class FragmentLogin : Fragment() {
             res=false
         }else{
             ETX_FRGLogin_UserName.error=null
+        }
+        if (password.isEmpty()){
+            ETX_FRGLogin_Password.error = "Ingrese su contraseña"
             res=false
+        }
+        else
+        {
+            ETX_FRGLogin_Password.error = null
         }
         return res
     }
+
     private fun verifyCredentials(user: String, password: String): Boolean {
         return user=="admin" && password=="123456"
     }
