@@ -59,6 +59,7 @@ class FragmentLogin : Fragment() {
             Toast.makeText(requireContext(), getString(R.string.loginError), Toast.LENGTH_SHORT).show()
 
         }
+        }
     }
 
 
@@ -67,8 +68,10 @@ class FragmentLogin : Fragment() {
         var res = true
         if (user.isEmpty()) {
             ETX_FRGLogin_UserName.error=getString(R.string.userEmpty)
+            res=false
         }else{
             ETX_FRGLogin_UserName.error=null
+            res=false
         }
         return res
     }
