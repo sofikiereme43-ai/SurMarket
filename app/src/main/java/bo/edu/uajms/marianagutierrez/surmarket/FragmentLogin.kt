@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 
@@ -13,7 +14,7 @@ class FragmentLogin : Fragment() {
 
     private lateinit var ETX_FRGLogin_UserName: EditText
     private lateinit var ETX_FRGLogin_Password: EditText
-    private lateinit var TXV_FRGLogin_RecoverPassword: EditText
+    private lateinit var TXV_FRGLogin_RecoverPassword: TextView
     private lateinit var BTN_FRGLogin_Login: Button
     private lateinit var BTN_FRGLogin_Register: Button
     override fun onCreateView(
@@ -26,10 +27,10 @@ class FragmentLogin : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        initalizeViews(view)
+        initializeViews(view)
         configureListenners()
     }
-    private fun initalizeViews(view: View) {
+    private fun initializeViews(view: View) {
         ETX_FRGLogin_UserName =view.findViewById(R.id.ETX_FRGLogin_UserName)
         ETX_FRGLogin_Password =view.findViewById(R.id.ETX_FRGLogin_Password)
         TXV_FRGLogin_RecoverPassword=view.findViewById(R.id.TXV_FRGLogin_RecoverPassword)
